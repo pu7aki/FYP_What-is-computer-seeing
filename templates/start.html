@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Start</title>
+{% load static %}
+        {% csrf_token %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/start1.css' %}">
+</head>
+<body>
+
+<div style="text-align: center; ">
+{% if none == 2 %}
+    <h3>Something wrong. Please try again or try other photos.</h3><br>
+{% endif %}
+</div>
+<div style="text-align: center; ">
+{% if none == 0 %}
+    <h3>Please input all the blanks!</h3><br>
+{% endif %}
+</div>
+
+<div class="container" style="text-align:center;">
+
+
+            <form action="/start1/" method="POST" >
+                {% csrf_token %}
+                <h4 class="text-center">
+                Level :
+                </h4>
+                <label><input name="level" type="radio" value="1" />Easy</label>
+                <label><input name="level" type="radio" value="2" />Hard</label>
+                <h4 class="text-center">
+                    Figure name:
+                </h4>
+                <input type="text" name="fig_name" class="input-xs " placeholder="figure name">
+                <h4 class="text-center">
+                    Username:
+                </h4>
+				<input type="text" name="username" placeholder="username"  class="input-xs "/> <br /><br />
+
+                <button name="submit" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Start</button>
+                <br><br>
+            </form>
+
+
+</div>
+
+
+<div class="footer" style="text-align: center; ">
+<form action="/" method="GET">
+        {% csrf_token %}
+        <button name="return" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Return</button>
+    </form>
+<br><br>
+ <h3 class="text-center">
+		Choose a figure name from these name (eg. abc.jpg):
+    </h3>
+        <table style="margin:auto">
+                <tr class="danger">
+                    <th>Time</th>
+                    <th>Name</th>
+                    <th>Figure Name</th>
+                    <th>Content</th>
+                </tr>
+            <tbody>
+                {% if messages %}
+                    {% for message in messages %}
+                        <tr class="{% cycle 'active' 'success' 'warning' 'info' %}">
+                            <td>{{ message.publish|date:'Y-m-d H:i:s' }}</td>
+                            <td>{{ message.username }}</td>
+                            <td>{{ message.title }}</td>
+                            <td>{{ message.content }}</td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="4">None</td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+
+</div>
+</body>
+</html>

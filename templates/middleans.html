@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Answer</title>
+    {% csrf_token %}
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/start1.css' %}">
+</head>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<body>
+
+<div style="text-align: center; ">
+{% if none == 0 %}
+    <h3>Please input all the blanks!</h3>
+{% endif %}
+</div>
+
+<div class="box">
+
+        <div class="left-box" style="text-align: center; ">
+            {% csrf_token %}
+            <img alt="original" src="/static/img/original.png" width="600"/><br>
+        </div>
+
+    <div class="right-box" style="text-align: center; ">
+        <br><br><br><br><br><br><br><br><br><br>
+{#        <p id="score"></p>#}<h2>Well done!!</h2>
+        <br><br><br><br><br><br><br>
+{#        {{info}}#}
+        <!--method: POST /GET -->
+{#        <form action="/score/" method="get" novalidate="novalidate" enctype="multipart/form-data">#}
+{#            {% csrf_token %}#}
+{#            {% if score.value == 6 %}#}
+{#                <textarea>1</textarea>#}
+{#            {% endif%}#}
+            <button type="button" onclick="score()" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Next</button>
+{#        </form>#}
+    </div>
+
+</div>
+</body>
+<script>
+
+    function score() {
+        var value = sessionStorage.getItem("key");
+        var score = 0;
+        if (value > 40) {
+            score = 4;
+        } else if (value < 41 && value > 20) {
+            score = 3;
+        } else if (value < 21 && value > 0) {
+            score = 2;
+        } else {
+            score = 1;
+        }
+        {#document.getElementById("score").innerText = "Score: "+score;#}
+
+         $.ajax({
+
+            dataType: 'JSON',
+                    cache: false,
+                    async: true,
+                    url: '/score1/',
+                            type: 'POST',
+                            data: {
+                                score1: score,
+                            },
+                    beforeSend: function (xhr, settings) {
+                        xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}");
+                    },
+                    success: function () {
+
+                    }
+        });
+         var times=sessionStorage.getItem("times");
+        if(times<1){
+            sessionStorage.setItem("times", times-1);
+            window.location.href='/score/';
+         }else {
+            sessionStorage.setItem("times", times-1);
+                window.location.href = '/start31/';
+        }
+    }
+
+
+</script>
+</html>

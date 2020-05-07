@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d95e5c81-622d-4a03-9db2-7cf41fa50605" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Mask/Mask_RCNN_game" />
+  </component>
+  <component name="ProjectId" id="1YDhcztNcbiSiG2tDNoxfBHGqX5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\FYP\myfyp\static\css" />
+      <recent name="D:\FYP\myfyp" />
+      <recent name="D:\FYP\myfyp\mask" />
+      <recent name="D:\FYP\myfyp\static\js" />
+      <recent name="D:\FYP\myfyp\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\FYP\myfyp\static" />
+      <recent name="D:\FYP\myfyp\Mask" />
+      <recent name="D:\FYP\myfyp" />
+      <recent name="D:\FYP\myfyp\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.myfyp">
+    <configuration name="mask_rcnn_demo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myfyp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mask/mask_rcnn_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mask_rcnn_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="myfyp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mask_RCNN-2.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mask_RCNN-2.0/mask_rcnn_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="myfyp" type="PythonConfigurationType" factoryName="Python">
+      <module name="myfyp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="D:\software\python\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$" />
+      <option name="PARAMETERS" value="in" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="myfyp" type="Python.DjangoServer" factoryName="Django server">
+      <module name="myfyp" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="myfyp.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.myfyp" />
+      <item itemvalue="Python.myfyp" />
+      <item itemvalue="Python.mask_rcnn_demo" />
+      <item itemvalue="Python.mask_rcnn_demo (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.mask_rcnn_demo" />
+        <item itemvalue="Python.mask_rcnn_demo (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d95e5c81-622d-4a03-9db2-7cf41fa50605" name="Default Changelist" comment="" />
+      <created>1582483155613</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582483155613</updated>
+      <workItem from="1582483157033" duration="3210000" />
+      <workItem from="1582580577636" duration="21780000" />
+      <workItem from="1582730653399" duration="7082000" />
+      <workItem from="1582804996424" duration="479000" />
+      <workItem from="1582886805140" duration="3902000" />
+      <workItem from="1583343739258" duration="2536000" />
+      <workItem from="1583401580328" duration="930000" />
+      <workItem from="1583754696980" duration="61324000" />
+      <workItem from="1584025287305" duration="17750000" />
+      <workItem from="1584051233305" duration="1502000" />
+      <workItem from="1584052762979" duration="9020000" />
+      <workItem from="1584184104976" duration="92000" />
+      <workItem from="1584293916569" duration="691000" />
+      <workItem from="1584304875587" duration="47000" />
+      <workItem from="1585217212355" duration="12116000" />
+      <workItem from="1585324795981" duration="171000" />
+      <workItem from="1585929223631" duration="16144000" />
+      <workItem from="1586011999571" duration="10000" />
+      <workItem from="1586015006105" duration="5070000" />
+      <workItem from="1586080018186" duration="5647000" />
+      <workItem from="1586100828062" duration="5436000" />
+      <workItem from="1586246563296" duration="1485000" />
+      <workItem from="1586423534688" duration="2883000" />
+      <workItem from="1586449097826" duration="53987000" />
+      <workItem from="1586685795128" duration="19014000" />
+      <workItem from="1586947946180" duration="18964000" />
+      <workItem from="1587026453029" duration="7067000" />
+      <workItem from="1587130825532" duration="25155000" />
+      <workItem from="1587222440405" duration="323000" />
+      <workItem from="1587230162687" duration="1527000" />
+      <workItem from="1587240506374" duration="154000" />
+      <workItem from="1587570343880" duration="4011000" />
+      <workItem from="1587584161766" duration="674000" />
+      <workItem from="1587637542677" duration="1296000" />
+      <workItem from="1587819671400" duration="7864000" />
+      <workItem from="1588511978819" duration="1156000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585217259983">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585217259983" />
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587206281654">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="91" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587206281654" />
+    <state x="421" y="99" key="FileChooserDialogImpl" timestamp="1584304920745">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584304920745" />
+    <state width="1237" height="103" key="GridCell.Tab.0.bottom" timestamp="1588513183138">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="103" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588513183138" />
+    <state width="1237" height="103" key="GridCell.Tab.0.center" timestamp="1588513183137">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="103" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588513183137" />
+    <state width="1237" height="103" key="GridCell.Tab.0.left" timestamp="1588513183137">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="103" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588513183137" />
+    <state width="1237" height="103" key="GridCell.Tab.0.right" timestamp="1588513183137">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="103" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588513183137" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1584052749496">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584052749496" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1584052749496">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1584052749496" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1584052749496">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1584052749496" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1584052749496">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1584052749496" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1586015444266">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1586015444266" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1582892283079">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1582892283079" />
+    <state x="671" y="0" width="609" height="680" key="find.popup" timestamp="1583927839645">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="671" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1583927839645" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/myfyp$myfyp.coverage" NAME="myfyp Coverage Results" MODIFIED="1585217229653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/myfyp$mask_rcnn_demo__1_.coverage" NAME="mask_rcnn_demo (1) Coverage Results" MODIFIED="1583871287453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mask" />
+    <SUITE FILE_PATH="coverage/myfyp$mask_rcnn_demo.coverage" NAME="mask_rcnn_demo Coverage Results" MODIFIED="1582740827376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mask_RCNN-2.0" />
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Newbie</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/newbie.css' %}">
+	</head>
+	<body>
+    <div id="left"></div>
+
+    <div id="main">
+
+<div style="text-align: center; ">
+        <h2>Have a try: <br></h2>
+		<form action="/answer" method="get" onsubmit="return toVaild()" >
+			<img alt="cat" src="/static/img/cat_example_green.jpg" width="300"/>
+			<br><br><br>
+            <label for="fig">Guess what is this:</label><br>
+			 <input type="text" id="thisanswer"><br><br>
+			 <button name="submit" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Submit</button>
+        </form>
+	</div>
+         <div class="footer" style="text-align:center;">
+<form action="/" method="GET">
+        {% csrf_token %}
+        <button name="return" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Return</button>
+    </form>
+</div>
+    </div>
+<div id="right"></div>
+
+    </body>
+	<script language="javascript">
+		function toVaild() {
+            const val = document.getElementById("thisanswer").value;
+            //alert(val);
+			if (val == "cat") {
+				return true;
+			} else {
+				alert("Sorry, it's wrong:(");
+				return false;
+			}
+		}
+	</script>
+</html>

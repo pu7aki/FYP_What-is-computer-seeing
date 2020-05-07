@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Home Page</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/start1.css' %}">
+	</head>
+	<body>
+		<div class="box" style="text-align:center;">
+
+					<div style="font-size:20px" style="text-align:center">
+						<img alt="title" src="/static/img/title1.PNG" class="img-thumbnail" width="1000" style="margin: 0 auto;" />
+					</div>
+<br><br><br>
+{#					<div style="text-align: center; " class="left-box">#}
+            <div class="left-box" style="text-align: center; ">
+						<img alt="cat" src="/static/img/cat.gif" class="img-thumbnail" width="600"  style="margin: 0 auto;" />
+            </div>
+                <br>
+<br>
+            <div class="right-box" style="text-align: center; ">
+                        <form action="newbie" method="get">
+                            <button name="newbie" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Newbie</button>
+                        </form>
+                        <br>
+
+                        <form action="start" method="get">
+                            <button name="start" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Normal Start</button>
+                        </form>
+						<br>
+
+                        <form action="random" method="get">
+                            <button name="start" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Random Start</button>
+                        </form>
+						<br>
+
+                        <form action="upload" method="get">
+                            <button name="upload" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Upload</button>
+                        </form>
+                        <br>
+
+                        <form action="message" method="get">
+                            <button name="message" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Message</button>
+                        </form>
+                        <br>
+
+                        <form action="score" method="get">
+                            <button name="score" type="submit" value="Submit" style="text-align:center;width:120px;height:40px;border-radius: 8px;">Score</button>
+                        </form>
+
+            </div>
+        </div>
+
+	</body>
+</html>

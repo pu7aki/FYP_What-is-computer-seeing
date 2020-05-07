@@ -1,0 +1,5 @@
+html,body{margin:0;height:100%;background: #dedede}
+#left,#right{position:absolute;top:0;width:33%;height:100%;}
+#left{left:0;}
+#right{right: 0;}
+#main{margin: 0 33%;height: 100%;}

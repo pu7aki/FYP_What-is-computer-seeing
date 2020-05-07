@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Newbie</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/newbie.css' %}">
+	</head>
+	<body>
+    <div id="left"></div>
+
+    <div id="main">
+        <div style="text-align: left;">
+            <p><font size="4" face="arial" >
+        When you start, there are your score and time left on your right.
+                If you can't input the correct answers in the boxes, you will fail this game.
+                You will get different points for finishing in different time periods. <br> <br>
+        </font></p>
+            <img alt="cat" src="/static/img/start.jpg" width="700"/>
+            <p><font size="4" face="arial" >
+        Use Message page to check the messages.<br> <br>
+        </font></p>
+            <img alt="cat" src="/static/img/message.jpg" width="700"/>
+            <p><font size="4" face="arial" >
+        Use Score page to check the scores.<br> <br>
+        </font></p>
+            <img alt="cat" src="/static/img/score.jpg" width="700"/>
+        <p><font size="4" face="arial">
+            Scores : <br>
+            easy mode : 40s left: 3 points ; 20s  left: 2 points;  0s left: 1 point<br>
+            medium mode : 40s left: 4 points ; 20s  left: 3 points;  0s left: 2 points <br>
+            hard mode : 40s left: 6 points ; 20s  left: 5 points;  0s left: 4 points<br>
+        </font></p>
+</div>
+<div class="footer" style="text-align:center;">
+        <form action="/newbie3/" method="GET">
+        {% csrf_token %}
+        <button name="return" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Next</button>
+        </form>
+
+        <form action="/" method="GET">
+        {% csrf_token %}
+        <button name="return" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Return</button>
+        </form>
+    </div>
+    </div>
+<div id="right"></div>
+
+    </body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Random Start</title>
+            {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/random.css' %}">
+</head>
+<body>
+<div style="text-align: center; ">
+{% if none == 2 %}
+    <h3>Something wrong. Please try again or try other photos.</h3><br>
+{% endif %}
+</div>
+<div style="text-align: center; ">
+{% if none == 0 %}
+    <h3>Please input your username!</h3><br>
+{% endif %}
+</div>
+
+<div id="left" style="text-align:center;">
+    <br><br><br><br>
+<form action="/start2/" method="POST" >
+{% csrf_token %}
+    <h2>Easy : </h2>
+            <h4 class="text-center">
+                    Username:
+                </h4>
+				<input type="text" name="username" placeholder="username"  class="input-xs "/> <br /><br />
+        <input name="submit" type="image" value="ee" src="/static/img/easyer2.png" width="200"/>
+        </form>
+        <br><br>
+</div>
+<div id="main" style="text-align:center;">
+    <br><br><br><br>
+    <form action="/start3/" method="POST" >
+        <h2>Medium : </h2>
+        {% csrf_token %}
+    <h4 class="text-center">
+                    Username:
+                </h4>
+				<input type="text" name="username" placeholder="username"  class="input-xs "/> <br /><br />
+        <input name="submit" type="image" value="ee" src="/static/img/easy.png" width="200"/>
+        </form>
+        <br><br>
+</div>
+<div id="right" style="text-align:center;">
+    <br><br><br><br>
+    <form action="/start4/" method="POST" >
+        {% csrf_token %}
+        <h2>Hard : </h2>
+    <h4 class="text-center">
+                    Username:
+                </h4>
+				<input type="text" name="username" placeholder="username"  class="input-xs "/> <br /><br />
+        <input name="submit" type="image" value="ee" src="/static/img/hardeset.gif" width="200"/>
+        </form>
+
+</div>
+<div class="footer" style="text-align:center;">
+<form action="/" method="GET">
+        {% csrf_token %}
+        <button name="return" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Return</button>
+    </form>
+</div>
+</body>
+
+</html>

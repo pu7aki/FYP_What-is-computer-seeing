@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Start</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/start1.css' %}">
+    </head>
+    <body>
+
+    <div class="box">
+        <div class="left-box" style="text-align: center; ">
+            {% csrf_token %}
+            <img alt="mask" src="/static/img/mask.png" width="600"/>
+        </div>
+    <div class="right-box" style="text-align: center; ">
+        <br>
+
+        <form action="/answer1/" method="get" onsubmit="return beValid()">
+            {% csrf_token %}
+            <h2>Score : {{ score }}</h2>
+            <h2>Time left:</h2>
+            <font color="black" size="20"><p id="Time" >60</p></font>
+            <h2>Input your guess:</h2>
+            <br>
+                <input type="text" id="answera" class="input-xs " placeholder="answer 1" style="padding:10px;"><br><br>
+                <input type="text" id="answerb" class="input-xs " placeholder="answer 2" style="padding:10px;"><br><br>
+                <input type="text" id="answerc" class="input-xs " placeholder="answer 3" style="padding:10px;"><br><br><br>
+                <button name="submit" type="submit" value="Submit" style="text-align:center;width:90px;height:30px;border-radius: 8px;">Submit</button>
+        </form>
+    </div>
+    </div>
+        {{ label_list0 }}
+        {{ label_list1 }}
+        {{ label_list2 }}
+    </body>
+    <script>
+      function countDown(){
+				//获取初始时间
+				var time = document.getElementById("Time");
+				//获取到id为time标签中的数字时间
+				if(time.innerHTML == 0){
+					//等于0时清除计时，并跳转该指定页面
+					window.location.href="/Timeout/";
+				}else{
+				    sessionStorage.setItem("key", time.innerHTML);
+					time.innerHTML = time.innerHTML-1;
+				}
+			}
+			//1000毫秒调用一次
+			window.setInterval("countDown()",1000);
+
+
+        function beValid() {
+            {#var level = JSON.parse('{{ level|safe }}');#}
+            var label_list0 = JSON.parse('{{ label_list0|safe }}');
+            var label_list1 =JSON.parse('{{ label_list1|safe }}');
+            var label_list2 =JSON.parse('{{ label_list2|safe }}');
+            const ana = document.getElementById("answera").value;
+            const anb = document.getElementById("answerb").value;
+            const anc = document.getElementById("answerc").value;
+                    if (ana == label_list0) {
+                        if (anb == label_list1) {
+                            if (anc == label_list2) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else if (anb == label_list2) {
+                            if (anc == label_list1) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else {
+                            alert("Sorry, the second answer is wrong:(");
+                            return false;
+                        }
+                    } else if (ana == label_list1) {
+                        if (anb == label_list0) {
+                            if (anc == label_list2) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else if (anb == label_list2) {
+                            if (anc == label_list0) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else {
+                            alert("Sorry, the second answer is wrong:(");
+                            return false;
+                        }
+                    } else if (ana == label_list2) {
+                        if (anb == label_list1) {
+                            if (anc == label_list0) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else if (anb == label_list0) {
+                            if (anc == label_list1) {
+                                return true;
+                            } else {
+                                alert("Sorry, the third answer is wrong:(");
+                                return false;
+                            }
+                        } else {
+                            alert("Sorry, the second answer is wrong:(");
+                            return false;
+                        }
+                    } else {
+                        alert("Sorry, the first answer is wrong:(");
+                        return false;
+                    }
+                }
+
+    </script>
+</html>

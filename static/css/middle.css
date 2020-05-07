@@ -1,0 +1,10 @@
+body
+  {
+  background-color: #D8C1AF;
+  }
+
+.left-box,.right-box{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
