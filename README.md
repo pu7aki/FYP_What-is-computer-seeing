@@ -2,7 +2,8 @@
 Project title: 'What is the computer seeing?' - A cooperative photo-driven game    
 Name: Yiqiu Lei   
 Supervisor: Mark Matthews    
-This project is mainly to create a game that lets players know how the computer recognizes the images we upload. There are a lot of algorithms and software for computer vision, but there aren't many intuitive ways to let people know about it. I use an algorithm called Mask R-CNN that shows the parts of the image that the computer can distinguish and let the player guess. The part that the player guessed can be seen as a process of computer recognition. I compare the content inputted by the player with the answer recognized by our computer. The player will input the level and the name of photo he/she wants to guess. Then the player will input the answers according to the masked photo. They need also input their name so that they can accumulate scores after they guess it.        
+This project is mainly to create a game that lets players know how the computer recognizes the images we upload. There are a lot of algorithms and software for computer vision, but there aren't many intuitive ways to let people know about it. I use an algorithm called Mask R-CNN that shows the parts of the image that the computer can distinguish and let the player guess. The part that the player guessed can be seen as a process of computer recognition. I compare the content inputted by the player with the answer recognized by our computer. The player will input the level and the name of photo he/she wants to guess. Then the player will input the answers according to the masked photo. They need also input their name so that they can accumulate scores before they guess it.        
+Mask R-CNN code: https://github.com/matterport/Mask_RCNN    
       
 Installation tips:    
 PLEASE run this file in the D:\FYP\myfyp.  
